@@ -1,0 +1,30 @@
+1、支持docker检测
+2、支持反射和动态代理的污点跟踪
+3、在gitee维护一个官方仓库
+4、iast.server.mode可选参数local/remote 模式分别什么场景下建议使用？
+	1. local 与 remote 的区别：
+	- local 模式会上传不可信参数的值，可用于主动验证、SSRF 误报排除、观察污点传播过程等
+	- remote 不上传数据，只检测漏洞
+
+	2. 使用建议
+	- 使用 iast.io/iast.huoxian.cn 等 saas 服务时，建议使用 remote 模式
+	- 使用私有化部署的服务时，建议使用 local 模式
+5、[root@bogon docker-compose]# ./dtctl install -v 1.2.0
+	[Info] check docker servie status.
+	[Info] docker service is up.
+	[Info] check port status
+	[+] please input web service port, default [80]:8082
+	[Info] port 8082 is ok.
+	[Info] Starting docker compose ...
+	Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+	[Error] Installation failed,Something wrong!
+	
+	A:sudo ./dtctl install -v 1.2.0
+6、java的注入是一次性注入，永久存在的吗？我看了下进程掉了，但是还是在线状态
+	
+	A：Agent进程与业务进程是一致的，业务停的时候，agent也会停
+7、/IAST-openapi  openapi不会在redis里存放数据
+
+8、wifi密码：2y^2YHp9*n
+
+
