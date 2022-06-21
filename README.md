@@ -28,7 +28,7 @@ iast-jar  https://github.com/spring-projects/spring-boot.git
 docker run -it --rm -e IASTIP="http://IP" -e TOKEN="3d6bb430bc3" -e ProjectName="iast-jar" -p 8085:8085 registry.cn-hangzhou.aliyuncs.com/tscuite/bachang:iast-jar-v9
 ```
 
-iast-grpc-java 8888 https://github.com/HXSecurity/dongtai-grpc-range.git
+iast-grpc-java 内部还有个8888 https://github.com/HXSecurity/dongtai-grpc-range.git
 
 访问地址  http://127.0.0.1:8083/grpc/send?text=1
 ```cmd
